@@ -1,0 +1,8 @@
+<h1>Vendorsweets#show</h1>
+<p>Find me in app/views/vendorsweets/show.html.erb</p>
+
+<ul>
+<% @vendorsweets.each do |vendorsweet| %>
+	<li><%= link_to vendorsweet.model, vendorsweet_path(vendorsweet)%></li>
+<% end %>
+</ul>

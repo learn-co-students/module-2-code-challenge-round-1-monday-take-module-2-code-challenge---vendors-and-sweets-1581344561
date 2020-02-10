@@ -19,3 +19,12 @@ end
 sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
+
+a1 = Vendor.create("tony")
+a2 = Vendor.create("jose")
+
+c1 = Sweet.create("nerds")
+c2 = Sweet.create("loli")
+
+vs1 = VendorSweet.create("james", "gum", 4)
+vs2 = VendorSweet.create("hank", "chips", 8)

@@ -1,0 +1,13 @@
+<%= form_for(@vendorsweet) do |f| %>
+    <label>Vendor:</label><br>
+    <%= f.text_field :vendor %><br>
+
+    <label>Sweet:</label><br>
+    <%= f.text_field :sweet %><br>
+
+    <label>Price:</label>
+    <%= f.number_field :price %><br>
+
+    <%= f.submit %> 
+<% end %> 
+
