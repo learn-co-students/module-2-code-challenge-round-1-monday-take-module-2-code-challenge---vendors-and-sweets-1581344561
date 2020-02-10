@@ -1,0 +1,10 @@
+<h1>Vendorsweets#index</h1>
+
+<%= button_to "Add new vendorsweet", new_vendorsweet_path, method: :get %>
+
+
+<% @vendorsweets.each do |vendorsweet|%>
+	<p><%= vendorsweet.vendor %></p>
+    <p><%= vendorsweet.sweet %></p>
+    <p><%= vendorsweet.price %></p>
+<% end %>
